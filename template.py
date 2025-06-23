@@ -3,10 +3,11 @@ from pathlib import Path
 
 project_name = 'us_visa'
 
-list_of_files =[
+list_of_files = [
+
     f"{project_name}/__init__.py",
     f"{project_name}/components/__init__.py",
-    f"{project_name}/components/data_ingestion.py",
+    f"{project_name}/components/data_ingestion.py",  
     f"{project_name}/components/data_validation.py",
     f"{project_name}/components/data_transformation.py",
     f"{project_name}/components/model_trainer.py",
@@ -19,16 +20,19 @@ list_of_files =[
     f"{project_name}/entity/artifact_entity.py",
     f"{project_name}/exception/__init__.py",
     f"{project_name}/logger/__init__.py",
-    f"{project_name}/pipeline/__init__.py",
-    f"{project_name}/pipeline/training_pipeline.py",
+    f"{project_name}/pipline/__init__.py",
+    f"{project_name}/pipline/training_pipeline.py",
+    f"{project_name}/pipline/prediction_pipeline.py",
+    f"{project_name}/utils/__init__.py",
+    f"{project_name}/utils/main_utils.py",
     "app.py",
-    "requriements.txt",
+    "requirements.txt",
     "Dockerfile",
     ".dockerignore",
     "demo.py",
     "setup.py",
     "config/model.yaml",
-    "config/schema.yaml"
+    "config/schema.yaml",
 ]
 
 for filepath in list_of_files:
